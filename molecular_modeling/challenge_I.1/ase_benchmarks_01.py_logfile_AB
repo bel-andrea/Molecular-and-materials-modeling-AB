@@ -1,0 +1,75 @@
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:04.
+
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:04.
+
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:04.
+
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:04.
+
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+✔ MACE package imported successfully. Added to pipeline.
+
+==========================================================
+      COMPUTATIONAL CHEMISTRY ENGINE CPU WALL BENCHMARK   
+==========================================================
+
+🚀 Cluster Size: 1 H2O molecules (3 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0302 seconds (E = -2.50 eV)
+  |-- xTB (GFN2)           :   0.0422 seconds (E = -137.97 eV)
+  |-- PySCF (RHF/3-21G)    :   0.0685 seconds (E = -2056.79 eV)
+  |-- NWChem (DFT/3-21G)   :   1.2112 seconds (E = -2054.85 eV)
+Using Materials Project MACE for MACECalculator with /Users/andreabelendez/.cache/mace/20231210mace128L0_energy_epoch249model
+Using float32 for MACECalculator, which is faster but less accurate. Recommended for MD. Use float64 for geometry optimization.
+  |-- MACE (MACE-MP)       :   0.0810 seconds (E = -14.05 eV)
+
+🚀 Cluster Size: 2 H2O molecules (6 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0191 seconds (E = -4.94 eV)
+  |-- xTB (GFN2)           :   0.0191 seconds (E = -275.88 eV)
+  |-- PySCF (RHF/3-21G)    :   0.0278 seconds (E = -4113.48 eV)
+  |-- NWChem (DFT/3-21G)   :   1.1676 seconds (E = -4109.71 eV)
+Using Materials Project MACE for MACECalculator with /Users/andreabelendez/.cache/mace/20231210mace128L0_energy_epoch249model
+Using float32 for MACECalculator, which is faster but less accurate. Recommended for MD. Use float64 for geometry optimization.
+  |-- MACE (MACE-MP)       :   0.1030 seconds (E = -28.13 eV)
+
+🚀 Cluster Size: 4 H2O molecules (12 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0208 seconds (E = -9.80 eV)
+  |-- xTB (GFN2)           :   0.0196 seconds (E = -551.70 eV)
+  |-- PySCF (RHF/3-21G)    :   0.0416 seconds (E = -8226.85 eV)
+  |-- NWChem (DFT/3-21G)   :   1.2865 seconds (E = -8219.41 eV)
+Using Materials Project MACE for MACECalculator with /Users/andreabelendez/.cache/mace/20231210mace128L0_energy_epoch249model
+Using float32 for MACECalculator, which is faster but less accurate. Recommended for MD. Use float64 for geometry optimization.
+  |-- MACE (MACE-MP)       :   0.0396 seconds (E = -56.27 eV)
+
+🚀 Cluster Size: 8 H2O molecules (24 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0298 seconds (E = -19.51 eV)
+  |-- xTB (GFN2)           :   0.0248 seconds (E = -1103.31 eV)
+  |-- PySCF (RHF/3-21G)    :   0.1870 seconds (E = -16453.58 eV)
+  |-- NWChem (DFT/3-21G)   :   1.5523 seconds (E = -16438.83 eV)
+Using Materials Project MACE for MACECalculator with /Users/andreabelendez/.cache/mace/20231210mace128L0_energy_epoch249model
+Using float32 for MACECalculator, which is faster but less accurate. Recommended for MD. Use float64 for geometry optimization.
+  |-- MACE (MACE-MP)       :   0.0305 seconds (E = -112.56 eV)
+
+
+==========================================================
+                    BENCHMARK SUMMARY                     
+==========================================================
+| Method               | 1 H2O (3 atoms) | 2 H2O (6 atoms) | 4 H2O (12 atoms) | 8 H2O (24 atoms) |
+|----------------------|----------------------|----------------------|----------------------|----------------------|
+| MOPAC (PM7)          |     0.0302s     |     0.0191s     |     0.0208s     |     0.0298s     |
+| xTB (GFN2)           |     0.0422s     |     0.0191s     |     0.0196s     |     0.0248s     |
+| PySCF (RHF/3-21G)    |     0.0685s     |     0.0278s     |     0.0416s     |     0.1870s     |
+| NWChem (DFT/3-21G)   |     1.2112s     |     1.1676s     |     1.2865s     |     1.5523s     |
+| MACE (MACE-MP)       |     0.0810s     |     0.1030s     |     0.0396s     |     0.0305s     |
+==========================================================

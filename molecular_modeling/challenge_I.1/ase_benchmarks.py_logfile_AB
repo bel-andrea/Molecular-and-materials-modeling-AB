@@ -1,0 +1,59 @@
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:03.
+
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:03.
+
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:03.
+
+
+
+          MOPAC Job: "mopac.mop" ended normally on Oct 21, 2026, at 17:03.
+
+==========================================================
+      COMPUTATIONAL CHEMISTRY ENGINE CPU WALL BENCHMARK   
+==========================================================
+
+🚀 Cluster Size: 1 H2O molecules (3 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0589 seconds (E = -2.50 eV)
+  |-- xTB (GFN2)           :   0.5222 seconds (E = -137.97 eV)
+  |-- PySCF (RHF/3-21G)    :   0.6225 seconds (E = -2056.79 eV)
+  |-- NWChem (DFT/3-21G)   :   2.5394 seconds (E = -2054.85 eV)
+
+🚀 Cluster Size: 2 H2O molecules (6 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0144 seconds (E = -4.94 eV)
+  |-- xTB (GFN2)           :   0.0144 seconds (E = -275.88 eV)
+  |-- PySCF (RHF/3-21G)    :   0.0276 seconds (E = -4113.48 eV)
+  |-- NWChem (DFT/3-21G)   :   1.1676 seconds (E = -4109.71 eV)
+
+🚀 Cluster Size: 4 H2O molecules (12 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0162 seconds (E = -9.80 eV)
+  |-- xTB (GFN2)           :   0.0177 seconds (E = -551.70 eV)
+  |-- PySCF (RHF/3-21G)    :   0.0393 seconds (E = -8226.85 eV)
+  |-- NWChem (DFT/3-21G)   :   1.2668 seconds (E = -8219.41 eV)
+
+🚀 Cluster Size: 8 H2O molecules (24 atoms)
+----------------------------------------------------------
+  |-- MOPAC (PM7)          :   0.0238 seconds (E = -19.51 eV)
+  |-- xTB (GFN2)           :   0.0194 seconds (E = -1103.31 eV)
+  |-- PySCF (RHF/3-21G)    :   0.1407 seconds (E = -16453.58 eV)
+  |-- NWChem (DFT/3-21G)   :   1.5545 seconds (E = -16438.83 eV)
+
+
+==========================================================
+                    BENCHMARK SUMMARY                     
+==========================================================
+| Method               | 1 H2O (3 atoms) | 2 H2O (6 atoms) | 4 H2O (12 atoms) | 8 H2O (24 atoms) |
+|----------------------|----------------------|----------------------|----------------------|----------------------|
+| MOPAC (PM7)          |     0.0589s     |     0.0144s     |     0.0162s     |     0.0238s     |
+| xTB (GFN2)           |     0.5222s     |     0.0144s     |     0.0177s     |     0.0194s     |
+| PySCF (RHF/3-21G)    |     0.6225s     |     0.0276s     |     0.0393s     |     0.1407s     |
+| NWChem (DFT/3-21G)   |     2.5394s     |     1.1676s     |     1.2668s     |     1.5545s     |
+==========================================================
