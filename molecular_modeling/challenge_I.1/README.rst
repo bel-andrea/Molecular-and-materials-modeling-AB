@@ -4,7 +4,7 @@ This folder contains seven files:
 | MOPAC test for H\ :sub:`2`\ O molecule.
 
 **2:** ``ase-test2.py_logfile_AB``
-| AI-assisted MOPAC test for H\ :sub:`2`\ O and CH:sub:`4` molecules.
+| AI-assisted MOPAC test for H\ :sub:`2`\ O and CH\ :sub:`4`\ molecules.
 
 **3:** ``ase_tests-pyscf-mopac-xtb-crest-nwchem-qe.py_logfile_AB``
 | Molecular software workspace checklist (PySCF, MOPAC, xTB, CREST CLI Footprint, NWChem Binary Execution, Quantum Espresso).
