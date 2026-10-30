@@ -1,0 +1,112 @@
+================================================================================
+SYSTEM INFORMATION
+================================================================================
+Platform: macOS-15.6.1-arm64-arm-64bit-Mach-O
+Processor: arm
+Could not read CPU info: [Errno 2] No such file or directory: '/proc/cpuinfo'
+Could not read memory info: [Errno 2] No such file or directory: '/proc/meminfo'
+================================================================================
+
+✓ Found pw.x at: /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x (from pw_configure.txt)
+
+Setting up Thallium calculation with spin-orbit coupling...
+Created bulk Thallium with 2 atoms
+
+================================================================================
+CPU CORE INFORMATION
+================================================================================
+Physical cores: 10
+Logical cores (with hyper-threading): 10
+================================================================================
+
+================================================================================
+BENCHMARK CONFIGURATION
+================================================================================
+Physical cores: 10
+Logical cores: 10
+Number of benchmarks to run: 5
+MPI values: [1, 2, 4, 8, 10]
+OMP values: [1]
+Combinations: [(1, 1), (2, 1), (4, 1), (8, 1), (10, 1)]
+================================================================================
+
+📊 Benchmark 1/5
+
+============================================================
+BENCHMARK: MPI=1, OMP=1
+============================================================
+Command: /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi1_omp1/espresso.pwi > qe_benchmark_mpi1_omp1/pw.out
+✅ Benchmark completed: MPI=1, OMP=1
+   Wall Time: 39.59s
+   Efficiency: 0.99x
+
+📊 Benchmark 2/5
+
+============================================================
+BENCHMARK: MPI=2, OMP=1
+============================================================
+Command: mpirun  -np 2 /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi2_omp1/espresso.pwi > qe_benchmark_mpi2_omp1/pw.out
+✅ Benchmark completed: MPI=2, OMP=1
+   Wall Time: 24.63s
+   Efficiency: 0.99x
+
+📊 Benchmark 3/5
+
+============================================================
+BENCHMARK: MPI=4, OMP=1
+============================================================
+Command: mpirun  -np 4 /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi4_omp1/espresso.pwi > qe_benchmark_mpi4_omp1/pw.out
+✅ Benchmark completed: MPI=4, OMP=1
+   Wall Time: 16.54s
+   Efficiency: 0.99x
+
+📊 Benchmark 4/5
+
+============================================================
+BENCHMARK: MPI=8, OMP=1
+============================================================
+Command: mpirun  -np 8 /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi8_omp1/espresso.pwi > qe_benchmark_mpi8_omp1/pw.out
+✅ Benchmark completed: MPI=8, OMP=1
+   Wall Time: 21.14s
+   Efficiency: 0.98x
+
+📊 Benchmark 5/5
+
+============================================================
+BENCHMARK: MPI=10, OMP=1
+============================================================
+Command: mpirun  -np 10 /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi10_omp1/espresso.pwi > qe_benchmark_mpi10_omp1/pw.out
+✅ Benchmark completed: MPI=10, OMP=1
+   Wall Time: 22.26s
+   Efficiency: 0.94x
+
+✓ Results saved to benchmark_results.json
+
+================================================================================
+BENCHMARK SUMMARY
+================================================================================
+   MPI    OMP    Wall Time   Efficiency       Status
+--------------------------------------------------------------------------------
+     1      1        39.59s         0.99x    completed
+     2      1        24.63s         0.99x    completed
+     4      1        16.54s         0.99x    completed
+     8      1        21.14s         0.98x    completed
+    10      1        22.26s         0.94x    completed
+================================================================================
+
+🏆 Fastest calculation: MPI=4, OMP=1
+   Wall Time: 16.54s
+   Efficiency: 0.99x
+
+🏆 Best efficiency: MPI=1, OMP=1
+   Efficiency: 0.99x
+   Wall Time: 39.59s
+
+📊 Speedup relative to serial (1 MPI, 1 OMP): 39.59s
+   MPI= 4, OMP= 1:   2.39x speedup,    16.54s
+   MPI= 8, OMP= 1:   1.87x speedup,    21.14s
+   MPI=10, OMP= 1:   1.78x speedup,    22.26s
+   MPI= 2, OMP= 1:   1.61x speedup,    24.63s
+   MPI= 1, OMP= 1:   1.00x speedup,    39.59s
+
+=== BENCHMARK FINISHED ===

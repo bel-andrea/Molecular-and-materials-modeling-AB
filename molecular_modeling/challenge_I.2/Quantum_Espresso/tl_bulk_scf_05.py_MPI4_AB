@@ -1,0 +1,79 @@
+================================================================================
+SYSTEM INFORMATION
+================================================================================
+Platform: macOS-15.6.1-arm64-arm-64bit-Mach-O
+Processor: arm
+Could not read CPU info: [Errno 2] No such file or directory: '/proc/cpuinfo'
+Could not read memory info: [Errno 2] No such file or directory: '/proc/meminfo'
+================================================================================
+
+✓ Found pw.x at: /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x (from pw_configure.txt)
+================================================================================
+EXECUTABLE INFORMATION
+================================================================================
+
+📌 pw.x:
+   Full path: /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x
+   Exists: Yes
+   Executable: True
+
+   Shared library dependencies (ldd):
+     Error running ldd: [Errno 2] No such file or directory: 'ldd'
+
+📌 mpirun/mpiexec:
+   Full path: /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/mpirun
+   Exists: Yes
+   Executable: True
+
+   Shared library dependencies (ldd):
+     Error running ldd: [Errno 2] No such file or directory: 'ldd'
+
+================================================================================
+
+
+Setting up Thallium calculation with spin-orbit coupling...
+Created bulk Thallium with 2 atoms
+
+================================================================================
+CPU CORE INFORMATION
+================================================================================
+Physical cores: 10
+Logical cores (with hyper-threading): 10
+================================================================================
+
+================================================================================
+BENCHMARK CONFIGURATION
+================================================================================
+Physical cores: 10
+Logical cores: 10
+Number of benchmarks to run: 1
+MPI values: [4]
+OMP values: [1]
+Combinations: [(4, 1)]
+================================================================================
+
+📊 Benchmark 1/1
+
+============================================================
+BENCHMARK: MPI=4, OMP=1
+============================================================
+Command: /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/mpirun  -np 4 /Users/andreabelendez/anaconda3/envs/molmatmodel/bin/pw.x -i qe_benchmark_mpi4_omp1/espresso.pwi > qe_benchmark_mpi4_omp1/pw.out
+✅ Benchmark completed: MPI=4, OMP=1
+   Wall Time: 16.80s
+   Efficiency: 0.98x
+
+✓ Results saved to benchmark_results.json
+
+================================================================================
+BENCHMARK SUMMARY
+================================================================================
+   MPI    OMP    Wall Time   Efficiency       Status
+--------------------------------------------------------------------------------
+     4      1        16.80s         0.98x    completed
+================================================================================
+
+🏆 Fastest calculation: MPI=4, OMP=1
+   Wall Time: 16.80s
+   Efficiency: 0.98x
+
+=== BENCHMARK FINISHED ===

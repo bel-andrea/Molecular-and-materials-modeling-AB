@@ -1,0 +1,45 @@
+Configuration loaded from config.txt
+
+============================================================
+NWChem Runner
+============================================================
+Input file: ch3_zora_b3lyp_prop.nw
+NPROC values: [2, 4]
+Output directory: results
+Original input file will NOT be modified
+============================================================
+
+Creating modified input: ch3_zora_b3lyp_prop_nproc2.nw
+
+============================================================
+Running with NPROC=2
+Command: mpirun -np 2 nwchem ch3_zora_b3lyp_prop_nproc2.nw
+Output: results/ch3_zora_b3lyp_prop_nproc2_nproc2_20261030_090222.out
+============================================================
+
+✓ NWChem completed successfully with NPROC=2 (wall: 8.90s)
+Creating modified input: ch3_zora_b3lyp_prop_nproc4.nw
+
+============================================================
+Running with NPROC=4
+Command: mpirun -np 4 nwchem ch3_zora_b3lyp_prop_nproc4.nw
+Output: results/ch3_zora_b3lyp_prop_nproc4_nproc4_20261030_090232.out
+============================================================
+
+✓ NWChem completed successfully with NPROC=4 (wall: 7.00s)
+
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+NPROC      Wall Time (s)   Speedup      Efficiency   Status         
+------------------------------------------------------------
+2          8.90            1.00         50.0       % SUCCESS        
+4          7.00            1.27         31.8       % SUCCESS        
+============================================================
+
+Fastest run: NPROC=4 with wall time=7.00s
+Speedup over NPROC=2: 1.27x
+
+Cleaning up temporary files...
+  Removed: ch3_zora_b3lyp_prop_nproc2.nw
+  Removed: ch3_zora_b3lyp_prop_nproc4.nw
