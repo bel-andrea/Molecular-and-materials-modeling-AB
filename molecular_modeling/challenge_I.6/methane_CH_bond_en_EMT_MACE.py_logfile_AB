@@ -1,0 +1,56 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+======================================================================
+METHANE C-H BOND ENERGY - EMT vs MACE COMPARISON
+======================================================================
+
+-----------------------------------
+EMT CALCULATIONS
+-----------------------------------
+Methane Energy:       1.7668 eV
+Methyl Radical Energy:1.8106 eV
+Hydrogen Atom Energy: 3.2100 eV
+
+EMT Results:
+  C-H Bond Length:  1.1515 Å
+  C-H Bond Energy:  3.2539 eV
+  C-H Bond Energy:  313.95 kJ/mol
+
+-----------------------------------
+MACE CALCULATIONS
+-----------------------------------
+Using Materials Project MACE for MACECalculator with /Users/andreabelendez/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Methane Energy: -23.9136 eV
+Methyl Radical Energy: -18.4388 eV
+Hydrogen Atom Energy: -1.1590 eV
+
+MACE Results:
+  C-H Bond Length:  1.0931 Å
+  C-H Bond Energy:  4.3158 eV
+  C-H Bond Energy:  416.41 kJ/mol
+
+======================================================================
+COMPARISON WITH EXPERIMENT
+======================================================================
+
+C-H Bond Length:
+  Experimental:  1.0870 Å
+  EMT:           1.1515 Å  (Δ = +0.0645 Å)
+  MACE:          1.0931 Å  (Δ = +0.0061 Å)
+
+C-H Bond Energy:
+  Experimental:  4.55 eV (439.0 kJ/mol)
+  EMT:           3.2539 eV (313.95 kJ/mol)
+  MACE:          4.3158 eV (416.41 kJ/mol)
+
+======================================================================
+SUMMARY TABLE
+======================================================================
+Method       C-H Length (Å)     Bond Energy (eV)   Bond Energy (kJ/mol)
+------------------------------------------------------------------
+EMT          1.1515             3.2539             313.95            
+MACE         1.0931             4.3158             416.41            
+Exp.         1.0870             4.55               439.0             
+------------------------------------------------------------------
+
+Optimization complete! Trajectory files saved.
