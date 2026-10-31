@@ -1,0 +1,79 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+================================================================================
+DIATOMIC MOLECULES ATOMIZATION ENERGY: EMT vs MACE COMPARISON
+================================================================================
+
+Initializing MACE calculator...
+Using Materials Project MACE for MACECalculator with /Users/andreabelendez/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+================================================================================
+PROCESSING MOLECULE: H2
+================================================================================
+
+--- EMT Calculation for H2 ---
+  Optimized bond length: 0.7790 Å
+  Atomization energy:    5.3495 eV
+
+--- MACE Calculation for H2 ---
+  Optimized bond length: 0.7473 Å
+  Atomization energy:    4.2065 eV
+
+================================================================================
+PROCESSING MOLECULE: N2
+================================================================================
+
+--- EMT Calculation for N2 ---
+  Optimized bond length: 0.9981 Å
+  Atomization energy:    9.9372 eV
+
+--- MACE Calculation for N2 ---
+  Optimized bond length: 1.1124 Å
+  Atomization energy:    10.3130 eV
+
+================================================================================
+PROCESSING MOLECULE: O2
+================================================================================
+
+--- EMT Calculation for O2 ---
+  Optimized bond length: 1.1005 Å
+  Atomization energy:    8.5752 eV
+
+--- MACE Calculation for O2 ---
+  Optimized bond length: 1.2367 Å
+  Atomization energy:    5.5264 eV
+
+================================================================================
+PROCESSING MOLECULE: F2
+================================================================================
+
+--- EMT Calculation for F2 ---
+  EMT calculation failed: No EMT-potential for F
+
+--- MACE Calculation for F2 ---
+  Optimized bond length: 1.4555 Å
+  Atomization energy:    -0.5825 eV
+
+================================================================================
+FINAL COMPREHENSIVE SUMMARY TABLE
+================================================================================
+Molecule   Method   Bond Length (Å)    Atomization (eV)     Steps   
+----------------------------------------------------------------------
+H2         Exp      0.7410             4.48                 N/A     
+           EMT      0.7790             5.3495               4       
+           MACE     0.7473             4.2065               3       
+----------------------------------------------------------------------
+N2         Exp      1.0980             9.76                 N/A     
+           EMT      0.9981             9.9372               3       
+           MACE     1.1124             10.3130              4       
+----------------------------------------------------------------------
+O2         Exp      1.2080             5.16                 N/A     
+           EMT      1.1005             8.5752               3       
+           MACE     1.2367             5.5264               4       
+----------------------------------------------------------------------
+F2         Exp      1.4120             1.66                 N/A     
+           EMT      nan                nan                  0       
+           MACE     1.4555             -0.5825              4       
+----------------------------------------------------------------------
+
+All calculations complete! Trajectory files saved.
