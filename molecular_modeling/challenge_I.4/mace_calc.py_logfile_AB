@@ -1,0 +1,24 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+
+============================================================
+Molecule: H2O
+Model: macempa0mediummodel
+Device: cpu
+============================================================
+
+✓ Calculation completed in 0.133 seconds
+
+Energy:
+  -13.78592681 eV
+  -1330.1351 kJ/mol
+  -317.9104 kcal/mol
+
+Forces (eV/Å):
+  O0: [0.000000, -0.000000, 0.103395]
+  H1: [0.000000, 0.070193, -0.051697]
+  H2: [0.000000, -0.070193, -0.051697]
+
+Force magnitudes (eV/Å):
+  O0: 0.103395
+  H1: 0.087176
+  H2: 0.087176
