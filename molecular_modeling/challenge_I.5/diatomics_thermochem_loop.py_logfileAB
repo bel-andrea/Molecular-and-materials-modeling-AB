@@ -1,0 +1,96 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+================================================================================
+DIATOMIC MOLECULES THERMOCHEMISTRY: EMT vs MACE COMPARISON
+================================================================================
+
+Initializing MACE calculator...
+Using Materials Project MACE for MACECalculator with /Users/andreabelendez/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+
+================================================================================
+PROCESSING MOLECULE: H2
+================================================================================
+
+--- EMT Calculation for H2 ---
+  Optimized bond length: 0.7790 Å
+  Atomization energy:    5.3495 eV
+  Stretching frequency:  6962.83 cm⁻¹
+  ZPE:                   0.4393 eV
+  Enthalpy (H):          1.5921 eV
+  Entropy (S):           0.0014 eV/K
+
+--- MACE Calculation for H2 ---
+  Optimized bond length: 0.7473 Å
+  Atomization energy:    4.2065 eV
+  Stretching frequency:  4433.32 cm⁻¹
+  ZPE:                   0.2825 eV
+  Enthalpy (H):          -6.1597 eV
+  Entropy (S):           0.0014 eV/K
+
+================================================================================
+PROCESSING MOLECULE: N2
+================================================================================
+
+--- EMT Calculation for N2 ---
+  Optimized bond length: 0.9981 Å
+  Atomization energy:    9.9372 eV
+  Stretching frequency:  1231.26 cm⁻¹
+  ZPE:                   0.0778 eV
+  Enthalpy (H):          0.4294 eV
+  Entropy (S):           0.0020 eV/K
+
+--- MACE Calculation for N2 ---
+  Optimized bond length: 1.1124 Å
+  Atomization energy:    10.3130 eV
+  Stretching frequency:  2347.09 cm⁻¹
+  ZPE:                   0.1478 eV
+  Enthalpy (H):          -15.9899 eV
+  Entropy (S):           0.0020 eV/K
+
+================================================================================
+PROCESSING MOLECULE: O2
+================================================================================
+
+--- EMT Calculation for O2 ---
+  Optimized bond length: 1.1005 Å
+  Atomization energy:    8.5752 eV
+  Stretching frequency:  1074.89 cm⁻¹
+  ZPE:                   0.0686 eV
+  Enthalpy (H):          0.7821 eV
+  Entropy (S):           0.0020 eV/K
+
+--- MACE Calculation for O2 ---
+  Optimized bond length: 1.2367 Å
+  Atomization energy:    5.5264 eV
+  Stretching frequency:  1418.54 cm⁻¹
+  ZPE:                   0.0895 eV
+  Enthalpy (H):          -9.5112 eV
+  Entropy (S):           0.0020 eV/K
+
+==========================================================================================
+FINAL COMPREHENSIVE SUMMARY ACROSS DIATOMICS
+==========================================================================================
+
+>>> Molecule: H2 <<<
+Method   Bond (Å)     Atomization (eV)   Freq (cm⁻¹)      ZPE (eV)     Entropy (S)   
+--------------------------------------------------------------------------------
+Exp.     0.7410       4.48               4401.20          0.2730       N/A           
+EMT      0.7790       5.3495             6962.83          0.4393       0.0014        
+MACE     0.7473       4.2065             4433.32          0.2825       0.0014        
+
+>>> Molecule: N2 <<<
+Method   Bond (Å)     Atomization (eV)   Freq (cm⁻¹)      ZPE (eV)     Entropy (S)   
+--------------------------------------------------------------------------------
+Exp.     1.0980       9.76               2358.57          0.1450       N/A           
+EMT      0.9981       9.9372             1231.26          0.0778       0.0020        
+MACE     1.1124       10.3130            2347.09          0.1478       0.0020        
+
+>>> Molecule: O2 <<<
+Method   Bond (Å)     Atomization (eV)   Freq (cm⁻¹)      ZPE (eV)     Entropy (S)   
+--------------------------------------------------------------------------------
+Exp.     1.2080       5.16               1580.00          0.0980       N/A           
+EMT      1.1005       8.5752             1074.89          0.0686       0.0020        
+MACE     1.2367       5.5264             1418.54          0.0895       0.0020        
+
+================================================================================
+All multi-molecule thermochemistry calculations complete!
