@@ -1,8 +1,8 @@
 Atomization Energy
 ==================
 
-N\ :sub:`2`molecule
--------------------
+ON :sub:`2` \molecule
+----------------------
 **Output file:** ``at_en_mace_EMT_N2.py_logfile_AB``
 
 ======  ===============  ================  
