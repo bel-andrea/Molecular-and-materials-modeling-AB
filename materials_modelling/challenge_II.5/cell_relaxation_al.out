@@ -1,0 +1,12 @@
+
+Starting Aluminum cell relaxation by ASE
+
+Final results (Aluminum)
+  Total Energy                  :  -252.252479 eV
+  ASE-style max force (norm)    : 0.000970 eV/Å
+  QE-style max force            : 0.000000 eV/Å
+  Pressure                      : 0.094147 kbar
+
+Final relaxed structure saved to: final_relaxed_structure_al.vasp
+
+Relaxation complete
