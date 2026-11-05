@@ -11,7 +11,7 @@ QE calculations were run using three different pseudopotentials for Si. Files ar
 
 **3:** ``pbesol_kjpaw`` Kresse-Joubert Projector Augmented-Wave (PAW) Pseudopotential.
 
-The employed pseudos are also found under the ‘‘pseudos‘‘ folder.
+The employed pseudos are also found under the ``pseudos`` folder.
 
 Modification of *ecutwfc*
 -------------------------
