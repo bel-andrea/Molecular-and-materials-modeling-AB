@@ -16,5 +16,5 @@ The employed pseudos are also found under the ``pseudos`` folder.
 Modification of *ecutwfc*
 -------------------------
 For each pseudopotential, QE calculations were run using values of *ecutwfc* ranging from 20 to 50, in intervals of 5.
-The results were then plotted and saved as ‘‘.png‘‘ files, located inside the folders for each pseudopotential.
+The results were then plotted and saved as ``.png`` files, located inside the folders for each pseudopotential.
 Overall, *ecutwfc*=20 resulted in the highest energy values.
