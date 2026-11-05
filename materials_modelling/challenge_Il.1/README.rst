@@ -5,11 +5,11 @@ Pseudopotentials
 -----------------
 QE calculations were run using three different pseudopotentials for Si. Files are organized in three different folders, for each pseudo used:
 
-**1:** ‘‘norm_conserving‘‘ optimized norm-conserving Vanderbilt Pseudopotential (ONCV).
+**1:** ``norm_conserving`` optimized norm-conserving Vanderbilt Pseudopotential (ONCV).
 
-**2:** ‘‘pbe_rrkjus‘‘ Rappe-Rabe-Kaxiras-Joannopoulos Ultrasoft Pseudopotential (USPP).
+**2:** ``pbe_rrkjus`` Rappe-Rabe-Kaxiras-Joannopoulos Ultrasoft Pseudopotential (USPP).
 
-**3:** ‘‘pbesol_kjpaw‘‘ Kresse-Joubert Projector Augmented-Wave (PAW) Pseudopotential.
+**3:** ``pbesol_kjpaw`` Kresse-Joubert Projector Augmented-Wave (PAW) Pseudopotential.
 
 The employed pseudos are also found under the ‘‘pseudos‘‘ folder.
 
